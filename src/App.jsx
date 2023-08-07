@@ -17,7 +17,8 @@ function App() {
   return (
     <div className='App container'>
       <Header />
-      <Weather condition='lyja' />
+
+      {false && <Weather condition='lyja' />}
       {/* daznai naudojama atvaizduoti arba neatvaizduoti elementams */}
       {/* if showTitles === true */}
       {showTitles && <TitlesMap />}
@@ -25,7 +26,7 @@ function App() {
       {!showTitles && <h2>Titles siuo metu nerodomi</h2>}
 
       <MainBtn outline>Light mode</MainBtn>
-      {false && <CardList />}
+      {true && <CardList />}
     </div>
   );
 }
