@@ -14,7 +14,10 @@ function CardList() {
                 heroImage={card1Data.heroImage}
                 date={card1Data.date}
             />
-            <Card1 city='Paris !' heroImage='/img/paris.jpg' date='2024-07-08' />
+            <Card1
+                city='Paris !'
+                heroImage='/img/paris.jpg'
+                date='2024-07-08' />
             <Card1
                 city='San Francisco !'
                 heroImage='/img/sanfran.jpg'

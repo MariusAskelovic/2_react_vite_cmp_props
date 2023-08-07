@@ -6,16 +6,18 @@ import CardList from './components/CardList';
 import Header from './components/layout/Header';
 import MainBtn from './components/MainBtn';
 import TitlesMap from './components/TitlesMap';
+import Weather from './components/Weather';
 // export import Card2
 
 
 function App() {
   // const now = new Date();
   // const formatedDate = now.toLocaleString('LT-lt', { dateStyle: 'full' });
-  const showTitles = true;
+  const showTitles = false;
   return (
     <div className='App container'>
       <Header />
+      <Weather condition='lyja' />
       {/* daznai naudojama atvaizduoti arba neatvaizduoti elementams */}
       {/* if showTitles === true */}
       {showTitles && <TitlesMap />}
