@@ -2,24 +2,28 @@
 import './style/common.css';
 import './style/App.css';
 import './style/responsive.css';
-import Card1 from './components/Card1';
+import CardList from './components/CardList';
 import Header from './components/layout/Header';
 import MainBtn from './components/MainBtn';
+import TitlesMap from './components/TitlesMap';
+// export import Card2
 
-// funkcinis komponentas yra funkcija
-// prasideda didziaja raide
-// grazina jsx
 
 function App() {
+  // const now = new Date();
+  // const formatedDate = now.toLocaleString('LT-lt', { dateStyle: 'full' });
+  const showTitles = true;
   return (
     <div className='App container'>
       <Header />
+      {/* daznai naudojama atvaizduoti arba neatvaizduoti elementams */}
+      {/* if showTitles === true */}
+      {showTitles && <TitlesMap />}
+      {/* else */}
+      {!showTitles && <h2>Titles siuo metu nerodomi</h2>}
+
       <MainBtn outline>Light mode</MainBtn>
-      <div className='cardsList grid3'>
-        <Card1 city="New York" heroImage='img/newyork.jpg' date='Fri 27 Nov 2016' text='Praesent tincidunt sed tellus ut rutrum sed vitae justo.' />
-        <Card1 city="Paris" heroImage='img/paris.jpg' date='Fri 27 Nov 2016' text='Praesent tincidunt sed tellus ut rutrum sed vitae justo.' />
-        <Card1 city="San Francisco" heroImage='img/sanfran.jpg' date='Fri 27 Nov 2016' text='Praesent tincidunt sed tellus ut rutrum sed vitae justo.' />
-      </div>
+      {false && <CardList />}
     </div>
   );
 }
