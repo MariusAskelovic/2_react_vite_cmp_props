@@ -3,8 +3,6 @@ import './style/common.css';
 import './style/App.css';
 import './style/responsive.css';
 import Card1 from './components/Card1';
-import Card2 from './components/Card2';
-import Card3 from './components/Card3';
 import Header from './components/layout/Header';
 
 // funkcinis komponentas yra funkcija
@@ -16,9 +14,9 @@ function App() {
     <div className='App container'>
       <Header />
       <div className='cardsList grid3'>
-        <Card1 />
-        <Card2 />
-        <Card3 />
+        <Card1 city="New York" heroImage='img/newyork.jpg' date='Fri 27 Nov 2016' text='Praesent tincidunt sed tellus ut rutrum sed vitae justo.' />
+        <Card1 city="Paris" heroImage='img/paris.jpg' date='Fri 27 Nov 2016' text='Praesent tincidunt sed tellus ut rutrum sed vitae justo.' />
+        <Card1 city="San Francisco" heroImage='img/sanfran.jpg' date='Fri 27 Nov 2016' text='Praesent tincidunt sed tellus ut rutrum sed vitae justo.' />
       </div>
     </div>
   );

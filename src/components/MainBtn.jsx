@@ -1,5 +1,5 @@
-function MainBtn() {
-  return <button className='btn'>Buy Tickets</button>;
+function MainBtn(props) {
+  return <button className='btn'>{props.children}</button>;
 }
 
 export default MainBtn;
