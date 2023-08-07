@@ -7,7 +7,33 @@ import Header from './components/layout/Header';
 import MainBtn from './components/MainBtn';
 import TitlesMap from './components/TitlesMap';
 import Weather from './components/Weather';
-// export import Card2
+
+const cardsArr = [
+  {
+    id: '1',
+    city: 'New York !!',
+    heroImage: '/img/newyork.jpg',
+    date: '2023-07-08',
+  },
+  {
+    id: '2',
+    city: 'Paris !',
+    heroImage: '/img/paris.jpg',
+    date: '2024-07-08',
+  },
+  {
+    id: '3',
+    city: 'San Francisco !',
+    heroImage: '/img/sanfran.jpg',
+    date: '2019-07-08',
+  },
+  {
+    id: '4',
+    city: 'Vilnius',
+    heroImage: '/img/vilnius.jpg',
+    date: '2023-08-07',
+  }
+]
 
 
 function App() {
@@ -26,7 +52,7 @@ function App() {
       {!showTitles && <h2>Titles siuo metu nerodomi</h2>}
 
       <MainBtn outline>Light mode</MainBtn>
-      {true && <CardList />}
+      {true && <CardList list={cardsArr} />}
     </div>
   );
 }
